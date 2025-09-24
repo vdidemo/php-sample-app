@@ -6,9 +6,7 @@ class Smtp extends Api implements EmailInterface
 {
   //the available ports
   const TLS             = 587;
-  const TLS_ALTERNATIVE = 25;
-  const SSL             = 465;
-  const HOSTNAME        = 'smtp.sendgrid.net';
+  const HOSTNAME        = 'mail.eranyacloud.com';
 
   //the list of port instances, to be recycled
   private $swift_instances = array();
@@ -184,3 +182,4 @@ class Smtp extends Api implements EmailInterface
     return true;
   }
 }
+
