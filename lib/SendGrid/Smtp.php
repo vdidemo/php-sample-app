@@ -6,7 +6,7 @@ class Smtp extends Api implements EmailInterface
 {
   //the available ports
   const TLS             = 587;
-  const HOSTNAME        = 'mail.eranyacloud.com';
+  const HOSTNAME        = 'zsmtp.eranyacloud.com';
 
   //the list of port instances, to be recycled
   private $swift_instances = array();
@@ -182,4 +182,5 @@ class Smtp extends Api implements EmailInterface
     return true;
   }
 }
+
 
